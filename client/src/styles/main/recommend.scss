@@ -1,0 +1,62 @@
+.recommend {
+  // background-image: url("./../../../public/recommendBg.png");
+  background-color: #0f342d;
+  background-size: cover;
+}
+.recommend-title {
+  font-family: "M PLUS 1p", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 28px;
+  text-align: center;
+  color: white;
+}
+.recommend-title-sub {
+  font-family: "M PLUS 1p", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #de2d01;
+}
+
+.recommend .p-highlight {
+  background-color: #ececec !important ;
+}
+
+.recommend .p-carousel-indicator button {
+  width: 100% !important;
+  background-color: transparent !important;
+}
+
+.recommend .p-carousel-items-container {
+  width: 100%;
+}
+
+.recommend .p-carousel-item {
+  padding: 20px;
+}
+
+.recommend .p-carousel-next svg {
+  color: white;
+}
+
+.recommend .p-carousel-prev svg {
+  color: white;
+}
+
+.recommend .p-carousel-next {
+  border: 1px solid gray !important;
+}
+
+.recommend .p-carousel-prev {
+  border: 1px solid gray !important;
+}
+@media screen and (max-width: 1000px) {
+  .recommend-title {
+    font-size: 44px;
+  }
+}

@@ -1,0 +1,28 @@
+.recipeCard-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.recipeCard-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6e6e6e;
+  text-align: center;
+}
+
+.recipeCard-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #121212;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .recipeCard-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+}

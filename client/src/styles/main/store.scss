@@ -1,0 +1,114 @@
+.buyButton {
+  transition: 0.2s;
+}
+.buyButton:hover {
+  box-shadow: -3px 3px 1px hsl(0, 0%, 100%);
+  margin-left: 23px;
+  margin-bottom: 3px;
+  margin-right: -3px;
+  margin-top: -3px;
+}
+
+.Store-shop-slider .Store-shop-slider .p-highlight {
+  background-color: #ececec !important ;
+}
+
+.Store-image-abs {
+  height: 1100px;
+  object-fit: cover;
+}
+
+.Store-shop-slider .p-carousel-indicators {
+  display: none;
+}
+
+.Store-shop-slider .p-carousel-items-container {
+  width: 100%;
+}
+
+.Store-shop-slider .p-carousel-item {
+  padding: 20px;
+}
+
+.Store-shop-slider .p-carousel-next {
+  border: 1px solid gray !important;
+}
+
+.Store-shop-slider .p-carousel-prev {
+  border: 1px solid gray !important;
+}
+
+.Store-shop-slider .p-carousel-next svg {
+  color: white;
+}
+
+.Store-shop-slider .p-carousel-prev svg {
+  color: white;
+}
+
+.Store-shop-slider .p-carousel-prev {
+  display: none;
+}
+
+.tool-icon {
+  display: none;
+}
+
+.tool-card:hover .tool-icon {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .Store {
+    display: block;
+  }
+  .Store-image {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    padding-left: 68px;
+  }
+  .Store-image-abs {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .buyButton {
+    width: 86%;
+  }
+
+  .Store-shop-slider {
+    width: 100%;
+  }
+  .Store-title {
+    font-size: 52px;
+    margin-left: 30px;
+  }
+  .Store-shop-title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Store-image {
+    min-width: 200px;
+    height: 500px;
+    object-fit: cover;
+    padding: 10px;
+  }
+  .Store-image-abs {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .Store-title {
+    padding: 0;
+  }
+  .Store-shop-slider {
+    padding-left: 10px;
+  }
+  .Store-image-icon {
+    bottom: 0;
+    right: 50px;
+  }
+}

@@ -1,0 +1,97 @@
+.about-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 144px;
+  color: #ffffff;
+}
+.about-div-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.left {
+  padding-left: 25%;
+  padding-top: 10%;
+  padding-right: 4%;
+  text-align: right;
+}
+.right {
+  padding-right: 25%;
+  padding-top: 10%;
+  padding-left: 4%;
+  text-align: left;
+}
+.about-last-div-title {
+  font-weight: 700;
+  font-size: 72px;
+  color: #ffffff;
+}
+.about-last-div-subtitle {
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.about-last-text {
+  background: url("/radialBg.webp");
+  background-position: center;
+  width: 100%;
+  padding: 100px;
+}
+.about-div-cont {
+  background: url("/radialBg.webp");
+  background-position: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .about-div {
+    display: block;
+  }
+  .about-div-img {
+    width: 100%;
+  }
+  .left {
+    padding: 40px;
+  }
+  .right {
+    padding: 40px;
+  }
+  .first {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-last-text {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-last-div-title {
+    font-size: 62px;
+    padding-bottom: 5px;
+  }
+  .about-last-div-subtitle {
+    font-size: 26px;
+  }
+  .about-last-text {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-last-div-title {
+    font-size: 52px;
+    padding-bottom: 8px;
+  }
+  .about-last-div-subtitle {
+    font-size: 16px;
+  }
+}

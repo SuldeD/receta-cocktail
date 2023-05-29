@@ -1,0 +1,121 @@
+.singleProd-tab .chakra-tabs__tablist {
+  border: none;
+  gap: 3rem;
+}
+
+.singleProd-tab .chakra-tabs__tablist button {
+  color: #6b6b6b;
+}
+
+.recipe-carousel .p-carousel-indicator {
+  margin: 0 !important;
+  border-top: 1px solid white !important;
+}
+
+.recipe-carousel .p-highlight {
+  background-color: #ececec !important ;
+}
+
+.recipe-carousel .p-carousel-indicator button {
+  width: 100% !important;
+  background-color: transparent !important;
+  height: 0.3rem !important;
+}
+
+.recipe-carousel button {
+  color: #dadada;
+}
+
+.cocktail-title {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.cocktail-text {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.p-rating-icon {
+  color: #f3d951 !important;
+}
+
+.recipe-carousel .p-carousel-item {
+  padding: 10px;
+}
+
+.recipe-carousel .p-carousel-indicators {
+  display: none;
+}
+
+.tabs .chakra-tabs__tablist {
+  border-bottom: none;
+}
+
+.related .p-carousel-indicators {
+  display: none;
+}
+
+.related .p-carousel-content {
+  overflow: visible;
+}
+
+.related .p-carousel-container {
+  position: relative;
+}
+
+.related .p-carousel-next {
+  position: absolute;
+  top: -80px;
+  right: 1%;
+  border: 1px solid gray !important;
+}
+.related .p-carousel-next svg {
+  color: white;
+}
+.related .p-carousel-prev svg {
+  color: white;
+}
+.related .p-carousel-prev {
+  position: absolute;
+  top: -80px;
+  right: calc(1% + 60px);
+  border: 1px solid gray !important;
+}
+
+.related .p-carousel-item {
+  padding: 0 20px;
+}
+
+.image-bg {
+  position: relative;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, black);
+  opacity: 0.7;
+}
+@media screen and (max-width: 600px) {
+  .singleProd-description {
+    font-size: 16px;
+  }
+  .singleProd-sub-div {
+    padding: 0 30px;
+  }
+  .singleProd-review {
+    padding: 0 30px;
+  }
+  .details-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .details-title {
+    font-size: 24px;
+  }
+}

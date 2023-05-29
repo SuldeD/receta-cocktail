@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./main/recipe";
+@import "./header";
+@import "./main/collection.scss";
+@import "./main/recommend.scss";
+@import "./main/parallax.scss";
+@import "./main/store.scss";
+@import "./news/news.scss";
+@import "./main/motion-menu.scss";
+@import "./main/howtouse.scss";
+@import "./store/store.scss";
+@import "./main/ourstory.scss";
+@import "./login/login.scss";
+@import "./main/single.scss";
+@import "./about/about.scss";
+@import "./main/mouseScroll.scss";
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Yomogi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Oswald:wght@200;300&family=Smokum&display=swap");
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #1e1e1e;
+}
+
+.bg {
+  background-size: cover;
+  background-position: right;
+}
+
+.Container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.scroll-ul {
+  display: flex;
+  list-style: none;
+  overflow-x: scroll;
+  gap: 32px;
+}
+.scroll-li {
+  flex: 0 0 230px;
+}
+
+.scroll-li:last-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .recipe {
+    width: 40%;
+  }
+}
+
+element.style {
+  opacity: 1 !important;
+}

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+
+@media screen and (max-width: 800px) {
+  .store-single {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .store-sub-cont {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .store-sub-img {
+    width: 150px;
+  }
+  .store-sub-title {
+    padding: 20px;
+  }
+}
+
+.store-sub-cont {
+  display: flex;
+}
+.store-sub-img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+}
+.buy-button {
+  font-family: "Sigmar", cursive;
+  padding: 10px;
+  border: 1px solid black;
+  transition: 0.2s;
+}
+.buy-button:hover {
+  box-shadow: -3px 3px 1px #4b4b4b;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  margin-right: -3px;
+  margin-top: -3px;
+}
+@media screen and (max-width: 900px) {
+  .store-img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .store-search-input {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .store-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .store-search-input {
+    max-width: 300px;
+  }
+}

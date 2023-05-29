@@ -1,0 +1,31 @@
+.header {
+  max-width: 1440;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom: 0.5px solid #dadada;
+}
+.header-pages {
+  width: 446px;
+  font-size: 16px;
+  margin: auto 0;
+}
+.header-login {
+  margin: auto 0;
+}
+@media screen and (max-width: 900px) {
+  .header-pages {
+    display: none;
+  }
+}
+
+.nav {
+  display: "flex";
+  position: "fixed";
+  align-items: "center";
+  justify-content: "space-between";
+  height: "6rem";
+  padding: "0 2rem";
+  width: "calc(100vw - 4rem)";
+  left: "0";
+}

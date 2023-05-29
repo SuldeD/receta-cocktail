@@ -1,0 +1,45 @@
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  .scroller {
+    display: flex;
+    white-space: nowrap;
+  }
+  span {
+    display: block;
+  }
+}
+.cocktail-parallox-text {
+  font-family: "M PLUS 1p", sans-serif;
+}
+@media screen and (max-width: 900px) {
+  .cocktail-parallox-text {
+    font-size: 52px;
+  }
+  .cocktail-parallox-text-sub {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cocktail-parallox-text {
+    font-size: 34px;
+  }
+  .cocktail-parallox-text-sub {
+    font-size: 24px;
+  }
+}

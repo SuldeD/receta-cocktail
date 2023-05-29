@@ -1,0 +1,15 @@
+.HowToUse {
+  background-image: url("./../../../public/HowToUse.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.HowToUse-text {
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .HowToUse-text {
+    width: 100%;
+  }
+}

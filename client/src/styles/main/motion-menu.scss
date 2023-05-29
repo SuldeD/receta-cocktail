@@ -1,0 +1,33 @@
+.open-ul {
+  position: absolute;
+  top: 8.63%;
+  background-color: white;
+  width: 250px;
+  height: 50vh;
+  right: 0px;
+  border: 1px solid black;
+  z-index: 10;
+}
+
+.close-ul {
+  position: absolute;
+  z-index: -10;
+  right: 85px;
+  top: 119px;
+}
+.motion-menu-btn {
+  padding-top: 15px;
+}
+.motion-menu-ul {
+  display: none;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .motion-menu-ul {
+    display: inline;
+  }
+  .open-ul {
+    top: 88px;
+  }
+}
