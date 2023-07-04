@@ -35,7 +35,6 @@ export const MenuItem = () => {
           href={page.url}
           key={index}
           onClick={() => {
-            localStorage.setItem("page", page.name);
             setActivePage(page.name);
           }}
           className={
