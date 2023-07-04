@@ -25,7 +25,6 @@ export default function Login() {
       .get(`${process.env.NEXT_PUBLIC_PUBLIC_SERVER}/google-login`)
       .then((res) => {
         router.push(res.data);
-        localStorage.setItem("page", "cocktails");
       });
   }
 

@@ -25,7 +25,8 @@ export class GoogleLoginController {
   googleLogin() {
     const stringifiedParams = queryString.stringify({
       client_id: process.env.GOOGLE_CLIENT_ID,
-      redirect_uri: `https://receta-server.onrender.com/google/callback`,
+      // receta-server.onrender.com
+      redirect_uri: `http://localhost:3003/google/callback`,
       scope: [
         "https://www.googleapis.com/auth/userinfo.email",
         "https://www.googleapis.com/auth/userinfo.profile",
@@ -64,6 +65,7 @@ export class GoogleLoginController {
       picture: user.picture,
     };
     const token = this.jwtService.sign(payload);
-    res.status(200).redirect(`${process.env.CLIENT_PORT}?token=${token}`);
+    res.status(200).cookie("token", token).redirect(`${process.env.CLIENT_PORT}`);
+    // .redirect(`${process.env.CLIENT_PORT}?token=${token}`);
   }
 }

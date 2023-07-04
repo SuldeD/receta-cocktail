@@ -41,7 +41,6 @@ export default function Store({
       onClick={() => {
         router.push(`../store/${tool._id}`);
         setActivePage("");
-        localStorage.setItem("page", "");
       }}
     >
       <Image
@@ -80,7 +79,7 @@ export default function Store({
             <HiOutlineShoppingBag
               onClick={() => {
                 router.push("../store");
-                localStorage.setItem("page", "store");
+
                 setActivePage("store");
               }}
               className={`${shopIcon} Store-image-icon text-[#A0A0A0] border-[#A0A0A0] absolute bottom-[40px] right-[40px] hover:border-white hover:text-white`}
@@ -125,7 +124,7 @@ export default function Store({
                 className="buyButton w-[385px] ms-[20px] text-[#ffffff] border-[#ffffff] font-semibold leading-[16px] text-[16px] py-[16px] border-[1px]"
                 onClick={() => {
                   router.push("../store");
-                  localStorage.setItem("page", "store");
+
                   setActivePage("store");
                 }}
               >

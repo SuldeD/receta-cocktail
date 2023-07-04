@@ -60,7 +60,6 @@ export default function Recipe(props: {
                     href={tool._id}
                     key={index}
                     onClick={() => {
-                      localStorage.setItem("page", "");
                       setActivePage("");
                     }}
                   >

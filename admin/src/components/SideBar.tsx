@@ -33,7 +33,6 @@ export default function SideBar(): JSX.Element {
               onClick={() => {
                 router.push(`/${page.url}`);
                 setActivePage(page.name);
-                localStorage.setItem("page", page.name);
               }}
             >
               <span className="mt-[3px] w-[20px] h-[20px] mb-[2px]">
@@ -70,33 +69,33 @@ interface PageType {
 export const pages: PageType[] = [
   {
     url: "../",
-    name: "Dashboard",
+    name: "dashboard",
     icon: <BiHomeAlt2 />,
   },
   {
     url: "../recipe",
-    name: "Recipe",
+    name: "recipe",
     icon: <TbBrandShopee />,
   },
   {
     url: "../news",
-    name: "News",
+    name: "news",
     icon: <SiApplenews />,
   },
 
   {
     url: "../user",
-    name: "User",
+    name: "user",
     icon: <BsFillPeopleFill />,
   },
   {
     url: "../order",
-    name: "Order",
+    name: "order",
     icon: <MdBookmarkBorder />,
   },
   {
     url: "../settings",
-    name: "Settings",
+    name: "settings",
     icon: <RiSettings3Fill />,
   },
 ];

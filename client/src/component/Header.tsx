@@ -24,7 +24,6 @@ export default function Header(): JSX.Element {
             onClick={() => {
               router.push("../");
               setActivePage("cocktails");
-              localStorage.setItem("page", "cocktails");
             }}
           >
             receta.
@@ -42,7 +41,6 @@ export default function Header(): JSX.Element {
               key={index}
               href={page.url}
               onClick={() => {
-                localStorage.setItem("page", page.name);
                 setActivePage(page.name);
               }}
             >

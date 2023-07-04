@@ -17,7 +17,7 @@ export default function RecipeCard(props: {
       className={`relative w-[256px] cursor-pointer recipe mb-5`}
       onClick={() => {
         router.push(`../cocktail/${recipe._id}`);
-        localStorage.setItem("page", "");
+
         setActivePage("");
       }}
     >

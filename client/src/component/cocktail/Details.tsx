@@ -83,7 +83,6 @@ export default function Details({ recipe, tools }: DetailsType): JSX.Element {
               className="absolute top-[5%] left-[5%] cursor-pointer"
               onClick={() => {
                 router.back();
-                localStorage.setItem("page", "cocktails");
                 setActivePage("cocktails");
               }}
             >

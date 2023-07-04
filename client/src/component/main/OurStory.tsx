@@ -68,7 +68,6 @@ export default function OurStory(): JSX.Element {
               <button
                 className="py-2 ourstory-button px-[6rem] border me-auto"
                 onClick={() => {
-                  localStorage.setItem("page", "about");
                   setActivePage("about");
                   router.push("../about");
                 }}

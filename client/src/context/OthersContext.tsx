@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { CategoriesType, PropType, OthersContextType } from "../util/Types";
 import { createContext, useContext, useEffect, useState } from "react";
 import React from "react";
@@ -8,6 +9,8 @@ const productContext = createContext<OthersContextType>(
 export const useOthers = () => useContext(productContext);
 
 export default function ProductProvider({ children }: PropType) {
+  const router = useRouter();
+
   const [activeCollectionBtn, setActiveCollectionBtn] = useState<string | null>(
     "Difficulty"
   );
@@ -17,9 +20,9 @@ export default function ProductProvider({ children }: PropType) {
   const [categories, setCategories] = useState<CategoriesType[]>([]);
 
   useEffect(() => {
-    localStorage.getItem("page")
-      ? setActivePage(localStorage.getItem("page"))
-      : setActivePage("cocktails");
+    router.pathname == "/"
+      ? setActivePage("cocktails")
+      : setActivePage(`${router.pathname.slice(1)}`);
 
     localStorage.getItem("category") &&
       setActiveCategoryBtn(localStorage.getItem("category"));

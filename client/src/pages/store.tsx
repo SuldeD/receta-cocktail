@@ -52,7 +52,7 @@ export default function Shop({ tools }: { tools: ToolType[] }): JSX.Element {
                   <div
                     onClick={() => {
                       router.push(`../store/${tool._id}`);
-                      localStorage.setItem("page", "");
+
                       setActivePage("");
                     }}
                     key={index}

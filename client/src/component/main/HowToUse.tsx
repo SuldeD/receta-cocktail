@@ -18,9 +18,7 @@ export default function HowToUse(): JSX.Element {
         <button
           className="py-3 px-[6rem] border me-auto"
           onClick={() => {
-            router.push("../news"),
-              localStorage.setItem("page", "news"),
-              setActivePage("news");
+            router.push("../news"), setActivePage("news");
           }}
         >
           read more
