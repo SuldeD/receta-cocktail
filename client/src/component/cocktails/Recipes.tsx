@@ -45,7 +45,7 @@ export default function Recipes(): JSX.Element {
       <motion.div
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true }}
         variants={fadeIn("up", "tween", 0.2)}
       >
         <div className="flex flex-wrap  border-x-[0.5px] border-[#dadada] Container gap-[16px] pb-[48px] place-content-center mx-auto">

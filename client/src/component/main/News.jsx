@@ -15,7 +15,7 @@ const News = (...data) => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| The News" textStyles="text-center" />

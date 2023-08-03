@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import {
   Modal,
@@ -10,11 +10,15 @@ import {
   ModalBody,
   useDisclosure,
   Tooltip,
+  Alert,
+  AlertIcon,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { FaCocktail } from "react-icons/fa";
+import { BiUser } from "react-icons/bi";
+import { AiOutlineShopping } from "react-icons/ai";
 
-export default function Login() {
+export default function Login({ icon }: any) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const initialRef = React.useRef(null);
@@ -27,12 +31,26 @@ export default function Login() {
         router.push(res.data);
       });
   }
+  const [openPopup, setPopup] = useState<boolean>(false);
 
   return (
     <>
       <Tooltip label="Login" aria-label="A tooltip" openDelay={200}>
-        <button onClick={onOpen} className="z-10">
-          Log in
+        <button
+          onClick={() => {
+            onOpen();
+            !icon && setPopup(true);
+            setTimeout(() => setPopup(false), 1500);
+          }}
+          className="z-10"
+        >
+          {icon ? (
+            <BiUser className="w-[24px] h-[24px] mx-auto flex text-center cursor-pointer basket-icon" />
+          ) : (
+            <div>
+              <AiOutlineShopping className="w-[24px] h-[24px] mx-auto flex text-center cursor-pointer basket-icon" />
+            </div>
+          )}
         </button>
       </Tooltip>
 
@@ -43,7 +61,16 @@ export default function Login() {
         onClose={onClose}
       >
         <ModalOverlay />
-        <ModalContent>
+
+        <ModalContent className="relative">
+          {openPopup && (
+            <div className="absolute z-50 top-[10px] w-full h-[20px]">
+              <Alert status="warning">
+                <AlertIcon />
+                <p className="text-[14px]">Нэвтрэх шаардлагатай</p>
+              </Alert>
+            </div>
+          )}
           <ModalHeader className="flex text-[#101419]">
             <h1 className="login-logo">receta.</h1>
           </ModalHeader>
@@ -56,7 +83,7 @@ export default function Login() {
             </p>
             <span
               onClick={googleLoginHandler}
-              className="flex place-content-center cursor-pointer mt-[45px] mb-2 px-5 py-[12px] bg-white border border-[#cecdcd] max-w-[334px] mx-auto border-[0.3px] gap-2 hover:bg-gray-50 duration-300"
+              className="flex place-content-center cursor-pointer mt-[45px] mb-2 px-5 py-[12px] bg-white  border-[#cecdcd] max-w-[334px] mx-auto border-[0.3px] gap-2 hover:bg-gray-50 duration-300"
             >
               <FcGoogle className="mt-[3px] w-[20px] h-[20px]" />
               <p className="text-[16px] text-[#424242]">sign in google</p>

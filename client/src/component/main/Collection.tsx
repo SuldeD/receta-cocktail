@@ -25,10 +25,9 @@ export default function Collection({
           <motion.div
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
+            viewport={{ once: true }}
             variants={fadeIn("down", "tween", 0.2)}
           >
-            {" "}
             <div className="Collection-div">
               <h1 className="text-[48px] text-[#000] font-medium Collection-title">
                 {activeCollectionBtn && activeCollectionBtn}
@@ -66,20 +65,23 @@ export default function Collection({
             </div>
           </motion.div>
 
-          <div className="Collection-arrow absolute text-black rounded-[50%] bottom-[56px] right-[-26px]">
-            <div className="container ">
+          <a
+            href="#category"
+            className="Collection-arrow absolute text-black rounded-[50%] bottom-[56px] right-[-26px]"
+          >
+            <div className="container">
               <div className="chevron" />
               <div className="chevron" />
               <div className="chevron" />
               <span className="text text-black">Scroll down</span>
             </div>
-          </div>
+          </a>
         </div>{" "}
         <div className="w-[50%] Col-section-right">
           <motion.div
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
+            viewport={{ once: true }}
             variants={fadeIn("down", "tween", 0.2)}
           >
             {collections.map(

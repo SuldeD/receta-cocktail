@@ -46,6 +46,21 @@ export const MenuItem = () => {
           {page.name}
         </Link>
       ))}
+
+      <Link
+        href={"/basket"}
+        key={"/basket"}
+        onClick={() => {
+          setActivePage("basket");
+        }}
+        className={
+          activePage === "basket"
+            ? "cursor-pointer bg-[#DFDFDF] py-3 text-center duration-200"
+            : "cursor-pointer hover:bg-[#DFDFDF] py-3 text-center duration-200"
+        }
+      >
+        basket
+      </Link>
     </motion.li>
   );
 };

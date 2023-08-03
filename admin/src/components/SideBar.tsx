@@ -44,7 +44,7 @@ export default function SideBar(): JSX.Element {
         </div>
 
         <div
-          className="flex gap-[6px] cursor-pointer mt-[30vh]"
+          className="flex gap-[6px] cursor-pointer mt-[20vh] text-[#C9C9C9] rounded-md bg-[#FCFCFC]"
           // eslint-disable-next-line @typescript-eslint/no-misused-promises
           onClick={async () => {
             setUser(null),
@@ -53,7 +53,7 @@ export default function SideBar(): JSX.Element {
               await router.push("../login");
           }}
         >
-          <CiLogout className="text-[#FF543E] mt-[2px] w-[20px] h-[20px] ms-[6px]" />{" "}
+          <CiLogout className="text-[#FF543E] mt-[3px] w-[20px] h-[20px] ms-[6px]" />{" "}
           <p>Log out</p>
         </div>
       </div>

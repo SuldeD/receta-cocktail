@@ -11,7 +11,7 @@ const Recommend = ({ recommend }) => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| Recommend" textStyles="text-center text-white" />

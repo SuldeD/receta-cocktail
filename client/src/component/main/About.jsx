@@ -5,14 +5,14 @@ import { fadeIn, staggerContainer } from "../../util/motion";
 
 const About2 = () => (
   <section
-    className={`${styles.paddings} relative z-10  text-white h-[80vh] flex flex-col justify-center mb-[20vh]`}
+    className={`${styles.paddings} relative z-10  text-white h-[80vh] flex flex-col justify-center mb-[10vh]`}
   >
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TypingText title="| About receta" textStyles="text-center" />
@@ -35,12 +35,14 @@ const About2 = () => (
         impress and delight.{`"`}
       </motion.p>
 
-      <motion.img
-        variants={fadeIn("up", "tween", 0.3, 1)}
-        src="/arrow-down.svg"
-        alt="arrow down"
-        className="w-[18px] h-[28px] object-contain mt-[28px]"
-      />
+      <a href="#getstarted">
+        <motion.img
+          variants={fadeIn("up", "tween", 0.3, 1)}
+          src="/arrow-down.svg"
+          alt="arrow down"
+          className="w-[18px] h-[28px] object-contain mt-[28px]"
+        />
+      </a>
     </motion.div>
   </section>
 );

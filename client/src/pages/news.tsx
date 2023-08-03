@@ -46,6 +46,8 @@ export default function Shop({
                     <motion.div className="news-card-container">
                       <Image
                         className="motion-card-image"
+                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADA..."
+                        placeholder="blur"
                         src={item.image_url}
                         fill={true}
                         alt={`${item.name} image`}

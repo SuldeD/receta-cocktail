@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .main {
   border: 1px solid #fcfcfc;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.12));

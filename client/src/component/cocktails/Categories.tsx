@@ -33,7 +33,10 @@ export default function Categories(): JSX.Element {
 
   return (
     <>
-      <div className="Container flex flex-wrap place-content-center py-[48px] gap-5 border-x-[0.5px] border-[#dadada]">
+      <div
+        id="category"
+        className="Container flex flex-wrap place-content-center py-[48px] gap-5 border-x-[0.5px] border-[#dadada]"
+      >
         {categories.map((category: CategoriesType, index) => (
           <CategoryBtn key={index} category={category.name} />
         ))}

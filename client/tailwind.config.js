@@ -14,6 +14,9 @@ module.exports = {
       backgroundImage: {
         background: "url('/public/background.png')",
       },
+      fontFamily: {
+        lobster: "'Lobster', cursive",
+      },
     },
   },
 };
