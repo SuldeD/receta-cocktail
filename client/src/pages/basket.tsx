@@ -8,8 +8,8 @@ import { useState } from "react";
 
 export default function Basket() {
   const [date, setDate] = useState<any>();
-  const [cardCheck, setCard] = useState<any>();
-  const [ppCheck, setPP] = useState<any>();
+  const [cardCheck, setCard] = useState<boolean>(false);
+  const [ppCheck, setPP] = useState<boolean>(false);
 
   return (
     <Layout>

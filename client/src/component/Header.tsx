@@ -22,7 +22,7 @@ import { Pages } from "../util/constVariables";
 import Login from "./Login";
 import { useOthers } from "../context/OthersContext";
 import { Example } from "./menu/MotionMenu";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { TbLogout } from "react-icons/tb";
 import { AiOutlineShopping } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
@@ -33,7 +33,7 @@ export default function Header(): JSX.Element {
   const { user, setUser } = useUser();
   const { activePage, setActivePage } = useOthers();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef<any>();
+  const btnRef = useRef<any>();
   const [openPopup, setPopup] = useState<boolean>(false);
 
   return (
